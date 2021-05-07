@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header border-0 bg-gray">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            <div class="modal-body bg-gray">
+              <div class="container-fluid">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-lg-5">
+                        <h3 class="title_medium text-red">Оставьте <br> заявку</h3>
+                        <p>
+                            Для получения заявок, оставьте номер телефона и ваше имя. Наш менеджер расскажет вам все подробнее.
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <form action="#">
+                            <input type="text" class="input_text mb-3" placeholder="Ваше имя">
+                            <input type="text" class="input_text mb-3" placeholder="+7 (___) ___ - __ - __">
+                            <div class="form-check d-flex align-items-center justify-content-center mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked="">
+                                <label class="form-check-label fz-12" for="flexCheckDefault">
+                                    Согласие на обработку своих персональных данных
+                                </label>
+                              </div>
+                            <button class="btn btn_red">Оформить займ</button>
+                        </form>
+                    </div>
+                  </div>
+              </div>
+              <!-- thank ----------------------------------------------------------------------->
+              <div class="container-fluid d-none">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-md-6">
+                        <h3 class="title_medium text-red text-center mb-5">Заявка <br> отправлена</h3>
+                        <p class="text-center">Мы получили вашу заявку.
+                            Наш менеджер свяжится с вами.</p>
+                    </div>
+                  </div>
+              </div>
+              <!-- thank ----------------------------------------------------------------------->
+            </div>
+            <div class="modal-footer border-0 bg-gray">
+              </div>
+          </div>
+        </div>
+      </div>
+    <div class="container-fluid top-section">
+        <div class="container pt-4 ">
+            <div class="row justify-content-between">
+                <div class="col-6 col-sm-2 pl-xl-0">
+                    <a href="#">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-3 d-none d-md-flex justify-content-end">
+                    <button class="btn btn_red float-right" data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать звонок</button>
+                </div>
+                <div class="col-2 d-block d-md-none">
+                    <a href="tel:+74950219029"><img src="img/phone.png" alt=""></a>
+                </div>
+            </div>
+            <div class="row px-xxl-5 mt-5 pt-5">
+                <div class="col-12 col-xl-6">
+                    <h1 class="title title_big">ДЕНЬГИ ПОД ЗАЛОГ НЕДВИЖИМОСТИ</h1>
+                    <h3 class="subtitle subtitle_big mt-3">В ДЕНЬ ОБРАЩЕНИЯ <span class="text-red">от <b>7%</b> годовых!</span></h3>
+                    <div class="w-100 d-block d-xl-none">
+                        <img src="img/top-block/people.png" alt="" class="w-100">
+                    </div>
+                    <div class="top-section__inner-grid mt-5">
+                        <img src="img/top-block/money.png" alt="" class="w-100 top-section__inner-grid__img d-none d-sm-block">
+                        <p class="top-section__inner-grid__text1">
+                            Мы действительно даем всю сумму <b>до 50 000 000 рублей за 1 день!</b>
+                        </p>
+                        <p class="top-section__inner-grid__text2">
+                            А аванс <b>от 50 000 до 30%</b> от суммы всего за <b>1 час!</b>
+                        </p>
+                    </div>
+                </div>
+                <div class="d-none d-xl-block col-5">
+                    <img src="img/top-block/people.png" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 position-relative container-form-index d-flex flex-column flex-xl-row align-items-center justify-content-between bg-red">
+                    <h2 class="title title_small fw-700 text-white mb-5 mb-xl-0">Оформить займ сейчас</h2>
+                    <form action="#" class="d-flex flex-column flex-xl-row justify-content-between">
+                        <input type="text" class="input_text mb-3 mb-xl-0" placeholder="Ваше имя">
+                        <input type="tel" class="input_text mb-5 mb-xl-0" placeholder="Ваш телефон">
+                        <button type="submit" class="btn btn_yellow">Оформить займ</button>
+                    </form>
+                    <span class="text-white position-absolute text-center">Нажимая кнопку «Оформить займ», Вы даете согласие на обработку персональных данных</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-section">
+        <div class="row">
+            <div class="col-12 col-xl-11 mx-auto dignity">
+                <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+                    <img src="img/dignity/ico/1.png" alt="">
+                    <p>Всего два документа</p>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+                    <img src="img/dignity/ico/2.png" alt="">
+                    <p>Любая кредитная история</p>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+                    <img src="img/dignity/ico/3.png" alt="">
+                    <p>Одобряем в 99,5% случаев</p>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+                    <img src="img/dignity/ico/4.png" alt="">
+                    <p>Без справок и поручителей</p>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+                    <img src="img/dignity/ico/5.png" alt="">
+                    <p>Законно и безопасно</p>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+                    <img src="img/dignity/ico/6.png" alt="">
+                    <p>Без переоформления собственности</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container calc mt-section mb-5 mb-sm-0">
+        <div class="row">
+            <h2 class="title title_medium">Расчитать кредит</h2>
+        </div>
+        <div class="row px-0 px-xl-3">
+            <div class="col-12 col-xl-6 d-flex flex-column">
+                <div class="calc__box-input">
+                    <input type="text" class="input_text calc__input fw-700 text-black" value="175000" disabled>
+                    <p class="calc__box-input__text calc__box-input__text_l">Сумма кредита</p>
+                    <p class="calc__box-input__text calc__box-input__text_r">&#8381;</p>
+                    <div class="range-box">
+                        <div class="range">
+                            <div class="min_val_range">от 300 тыс.</div>
+                            <span class="range__track"><span class="range-val"></span>
+                            </span>
+                            <input class="range__input" type="range" min="300000" max="20000000" value="175000" step="100000">
+                            <div class="max_val_range">до 20 млн.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calc__box-input">
+                    <input type="text" class="input_text calc__input fw-700 text-black" value="6" disabled>
+                    <p class="calc__box-input__text calc__box-input__text_l">Срок кредита</p>
+                    <p class="calc__box-input__text calc__box-input__text_r">&#8381;</p>
+                    <div class="range-box">
+                        <div class="range">
+                            <div class="min_val_range">от 1 года</div>
+                            <span class="range__track"><span class="range-val"></span>
+                            </span>
+                            <input class="range__input" type="range" min="1" max="10" value="6" step="1">
+                            <div class="max_val_range">до 10 лет</div>
+                        </div>
+                    </div>
+                </div>
+                <p class="calc__title fw-700 my-5">Тип платежа</p>
+                <div class="calc__radio-box d-flex">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="radio" name="type" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Аннуительный</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="radio" name="type" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Шаровый</label>
+                    </div>
+                </div>
+                <div class="calc__footer d-flex flex-column flex-xl-row justify-content-between align-items-center mt-2">
+                    <p class="fw-700 text-red">Ваш ежемесячный платёж <br> составляет:</p>
+                    <p class="calc__sum fw-700 text-red title_small">1500</p>
+                </div>
+            </div>
+            <div class="col-12 col-xl-6">
+                <div class="calc__dis bg-red position-relative">
+                    <img src="img/calc/money.png" alt="" class="calc__dis__img d-none d-md-block">
+                    <p class="calc__dis__p1 text-white">Кредит в размере от 50 000 000 рублей может быть выдан вам в течение одного рабочего дня.</p>
+                    <p class="calc__dis__p2 text-white">Аванс в размере от 5 000 000 рублей может быть выдан вам в течение 30 минут при посещении офиса.</p>
+                    <p class="calc__dis__title text-center fw-700 text-white">Если вам необходим аванс вы можете его забронировать:</p>
+                    <div class="calc__dis__btn-con d-flex flex-column flex-md-row align-items-center justify-content-around">
+                        <button class="btn btn_red btn_red-border calc__dis__btn1 mb-3 mb-md-0">Забронировать аванс</button>
+                        <button class="btn btn_red btn_red-border calc__dis__btn2">Получить деньги</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid object mt-section">
+        <div class="container">
+            <div class="row">
+                <h2 class="title title_medium text-white">ОБЪЕКТОМ ЗАЛОГА МОЖЕТ ЯВЛЯТЬСЯ:</h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-6 col-md-4 col-xl-3 my-2">
+                    <div class="card justify-content-center py-3">
+                        <div class="row">
+                            <div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
+                                <img src="img/zalog/top-ico/1.png" alt="" class="object__img">
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <div class="card-body">
+                                    <p class="card-title fw-700 text-red">Квартира</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 my-2">
+                    <div class="card justify-content-center py-3">
+                        <div class="row">
+                            <div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
+                                <img src="img/zalog/top-ico/2.png" alt="" class="object__img">
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <div class="card-body">
+                                    <p class="card-title fw-700 text-red">Коттедж</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 my-2">
+                    <div class="card justify-content-center py-3">
+                        <div class="row">
+                            <div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
+                                <img src="img/zalog/top-ico/3.png" alt="" class="object__img">
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <div class="card-body">
+                                    <p class="card-title fw-700 text-red">Доля квартиры</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 my-2">
+                    <div class="card justify-content-center py-3">
+                        <div class="row">
+                            <div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
+                                <img src="img/zalog/top-ico/4.png" alt="" class="object__img">
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <div class="card-body">
+                                    <p class="card-title fw-700 text-red">Земельный участок</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 my-2">
+                    <div class="card justify-content-center py-3">
+                        <div class="row">
+                            <div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
+                                <img src="img/zalog/top-ico/5.png" alt="" class="object__img">
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <div class="card-body">
+                                    <p class="card-title fw-700 text-red">Земельный участок</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 my-2">
+                    <div class="card justify-content-center py-3">
+                        <div class="row">
+                            <div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
+                                <img src="img/zalog/top-ico/6.png" alt="" class="object__img">
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <div class="card-body">
+                                    <p class="card-title fw-700 text-red">Таунхаус</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 my-1">
+                    <div class="card justify-content-center py-3">
+                        <div class="row">
+                            <div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
+                                <img src="img/zalog/top-ico/7.png" alt="" class="object__img">
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <div class="card-body">
+                                    <p class="card-title fw-700 text-red">Дом</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 my-1">
+                    <div class="card justify-content-center py-3">
+                        <div class="row">
+                            <div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
+                                <img src="img/zalog/top-ico/8.png" alt="" class="object__img">
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <div class="card-body">
+                                    <p class="card-title fw-700 text-red">Офисные, складские и производственные помещения</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-10 mx-auto bg-white object__center-block">
+                    <h3 class="title title_tiny fw-900 object__center-block__title">ДЛЯ ОФОРМЛЕНИЯ ЗАЛОГА НЕДВИЖИМОСТИ
+                        В БОЛЬШИНCТВЕ СЛУЧАЕВ ДОСТАТОЧНО ДВУХ ДОКУМЕНТОВ:</h3>
+                    <div class="object__center-block__l-box">
+                        <div class="d-flex justify-content-start align-items-center">
+                            <img src="img/zalog/bottom-ico/1.png" alt="">
+                            <p>Паспорт</p>
+                        </div>
+                        <div class="d-flex justify-content-start align-items-center">
+                            <img src="img/zalog/bottom-ico/2.png" alt="">
+                            <p>Документ основание на владение объектом недвижимости</p>
+                        </div>
+                    </div>
+                    <div class="object__center-block__r-box mt-5">
+                        <P>У нас вы можете получить бесплатную юридическую консультацию. Для всех залоговых кредитов осуществляется бесплатное юридическое и натариальное сопровождение и, при необходимости, сбор необходимых документов.</P>
+                        <button class="btn btn_red d-block mx-auto mx-xl-0" data-bs-toggle="modal" data-bs-target="#exampleModal">Заказать консультацию</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container step">
+        <div class="row mb-5">
+            <h2 class="title title_medium">ПРОСТЫЕ ШАГИ ОФОРМЛЕНИЯ</h2>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 mb-5 mb-md-0">
+                <div class="step__card">
+                    <img src="img/steps/1.png" alt="" class="card-img-top mx-auto">
+                    <div class="card-body">
+                        <p class="title text-red fw-700">Оставьте заявку</p>
+                        <p class="text-center">Оставьте заявку на сайте с номером телефона и мы Вам перезвоним.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5 mb-md-0">
+                <div class="step__card">
+                    <img src="img/steps/2.png" alt="" class="card-img-top mx-auto">
+                    <div class="card-body">
+                        <p class="title text-red fw-700">ПОДПИШИТЕ ДОГОВОР</p>
+                        <p class="text-center">После согласования условий мы подпишем с Вам договор залога.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5 mb-md-0">
+                <div class="step__card">
+                    <img src="img/steps/3.png" alt="" class="card-img-top mx-auto">
+                    <div class="card-body">
+                        <p class="title text-red fw-700">ПОЛУЧИТЕ ДЕНЬГИ</p>
+                        <p class="text-center">После оформления документов в РосРеестре Вы получаете деньги.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-section know">
+        <div class="row">
+            <h2 class="title title_medium">УЗНАТЬ СУММУ ОДОБРЕННОГО КРЕДИТА</h2>
+            <h3 class="subtitle subtitle_medium fw-400 text-center">ОЦЕНКА ПРОИЗВОДИТСЯ ДЕЖУРНЫМ СПЕЦИАЛИСТОМ ПО ЗАЛОГУ НЕДВИЖИМОСТИ, В ТЕЧЕНИE 2-Х МИНУТ</h3>
+        </div>
+        <form action="#" class="row px-0 px-lg-3 px-xl-4 px-xxl-5">
+            <div class="col-12 col-lg-4">
+                <div class="know__box-check-box mb-3 flex-column flex-lg-row">
+                    <p class="mb-0 text-grey">Кол-во <br class="d-none d-lg-block">
+                        комнат</p>
+                    <div>
+                        <div class="form_radio_btn">
+                            <input id="radio-1" type="radio" name="radio" value="1" checked>
+                            <label for="radio-1 ">1</label>
+                        </div>
+                            
+                        <div class="form_radio_btn">
+                            <input id="radio-2" type="radio" name="radio" value="2">
+                            <label for="radio-2">2</label>
+                        </div>
+                            
+                        <div class="form_radio_btn">
+                            <input id="radio-3" type="radio" name="radio" value="3">
+                            <label for="radio-3">3</label>
+                        </div>
+                            
+                        <div class="form_radio_btn">
+                            <input id="radio-4" type="radio" name="radio" value="4">
+                            <label for="radio-4">4+</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="know__box-input mb-3">
+                    <input type="text" class="input_text" placeholder="Москва">
+                    <img src="img/know/ico/geo.png" alt="" class="know__box-input__ico">
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="know__box-input mb-3">
+                    <input type="text" class="input_text" placeholder="Площадь">
+                    <img src="img/know/ico/square.png" alt="" class="know__box-input__ico">
+                </div>
+                <div class="know__box-input mb-3">
+                    <input type="tel" class="input_text" placeholder="Ваш телефон">
+                    <img src="img/know/ico/phone.png" alt="" class="know__box-input__ico">
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="know__box-input mb-3">
+                    <input type="text" class="input_text" placeholder="Адрес">
+                    <img src="img/know/ico/map.png" alt="" class="know__box-input__ico">
+                </div>
+                <button type="submit" class="btn btn_red w-100">Оценить сейчас</button>
+            </div>
+            <div class="col-12 d-none d-md-block">
+                <div class="form-check d-flex justify-content-center">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Нажимая кнопку «Оформить займ», Вы даете согласие на обработку персональных данных
+                    </label>
+                  </div>
+            </div>
+        </form>
+    </div>
+    <div class="container just mt-section">
+        <div class="row">
+            <div class="col-12 col-lg-5">
+                <img src="img/just/img.png" alt="" class="w-100">
+            </div>
+            <div class="col-12 col-lg-7 d-flex flex-column justify-content-center">
+                <h5 class="title_tiny fw-900 mb-4">Почему с НК Недвижимость кредит под залог это просто?</h5>
+                <p>У нас работает команда опытных профессионалов, поэтому вся сделка от оценки недвижимости до заключения договора и выдачи аванса занимает всего один час. Предлагаем низкие процентные ставки и выдаем крупные суммы всего за один день! Гарантируем прозрачные условия кредитования без скрытых комиссий и дополнительных платежей.</p>
+
+                <p>Для нас не важна ваша кредитная история. Одобряем до 99,5% заявок. Выдаем кредит, не требуя справок и поручителей. Юристы сопровождают сделку на всех этапах! При необходимости помогаем с подготовкой пакета документов.</p>
+
+                <p>Чтобы получить деньги, достаточно предъявить личный паспорт и право собственности на жилье. Кредитуем под залог квартир, частных домов, комнат и офисных помещений.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid reviews mt-section">
+        <div class="container">
+            <div class="row mb-5 mb=xl-0">
+                <div class="col-12 position-relative container-form-index d-flex flex-column flex-xl-row align-items-center justify-content-between bg-red reviews__red-box">
+                    <h2 class="title title_small fw-700 text-white mb-5 mb-xl-0">Оформить займ сейчас</h2>
+                    <form action="#" class="d-flex flex-column flex-xl-row justify-content-between">
+                        <input type="text" class="input_text mb-3 mb-xl-0" placeholder="Ваше имя">
+                        <input type="tel" class="input_text mb-5 mb-xl-0" placeholder="Ваш телефон">
+                        <button type="submit" class="btn btn_yellow">Оформить займ</button>
+                    </form>
+                    <span class="text-white position-absolute text-center">Нажимая кнопку «Оформить займ», Вы даете согласие на обработку персональных данных</span>
+                </div>
+            </div>
+            <div class="row">
+                <h2 class="title title_medium">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
+                <h3 class="subtitle subtitle_medium fw-400 text-center">УЖЕ <span class="fw-700">БОЛЕЕ 5000</span> ЧЕЛОВЕК ПОЛУЧИЛИ КРЕДИТ ПОД ЗАЛОГ В ДЕНЬ ОБРАЩЕНИЯ</h3>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-12 col-md-10 reviews__container">
+                    <div class="d-flex reviews__container__inner">
+                        <div class="bg-white reviews__box">
+                            <div class="d-flex align-items-end reviews__box__header">
+                                <img src="img/reviews/avatar/Daniil.png" alt="">
+                                <p class="fw-700 mb-0 reviews__box__name">Даниил <br>
+                                Новиков</p>
+                            </div>
+                            <p class="reviews__box__text mt-3">
+                                Попал в серьезную передрягу и срочно нужны были немаленькие деньги. Перехватить у знакомых быстро не получилось, а искать надежную кредитную компанию времени не было. Хорошие друзья посоветовали обратиться в НК Недвижимость. Я был приятно удивлен, насколько оперативно можно взять крупный займ под залог квартиры. Специалисты высоко оценили мое жилье и выдали деньги в тот же день! Очень доволен, что мне удалось решить свои проблемы с минимальными потерями. Спасибо! 
+                            </p>
+                        </div>
+                        <div class="bg-white reviews__box">
+                            <div class="d-flex align-items-end reviews__box__header">
+                                <img src="img/reviews/avatar/ylia.png" alt="">
+                                <p class="fw-700 mb-0 reviews__box__name">Юлия<br>
+                                Михайлова</p>
+                            </div>
+                            <p class="reviews__box__text mt-3">
+                                Оказалось, даже в самой критической ситуации не обязательно продавать жилье. Можно просто взять займ под залог квартиры. Выражаю огромную признательность компании «НК Недвижимость» за помощь в выборе кредитной программы. Если бы не вы, то я просто пропала бы. Финансовый эксперт Светлана проконсультировала меня по всем вопросам и помогла выбрать самые лояльные условия займа. Даже если я не буду справляться с нагрузкой, договор всегда можно продлить! Большое спасибо за то, что вы есть! Лучшей компании попросту не найти!
+                            </p>
+                        </div>
+                        
+                        <div class="bg-white reviews__box">
+                            <div class="d-flex align-items-end reviews__box__header">
+                                <img src="img/reviews/avatar/ilya.png" alt="">
+                                <p class="fw-700 mb-0 reviews__box__name">Илья<br>
+                                Виноградов</p>
+                            </div>
+                            <p class="reviews__box__text mt-3">
+                                Если вам нужны деньги на развитие серьезного бизнеса, то «НК Недвижимость» – это лучший финансовый партнер. Они не просто выдали мне крупный займ, но даже подобрали лучшую программу кредитования с низкими процентами. Все прозрачно и понятно, никаких дополнительных переплат. Эксперты отвечают на все вопросы и всегда идут навстречу. Настоятельно рекомендую брать взаймы в этой компании. Это надежно, быстро и выгодно!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-red py-xl-5 position-relative footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-xl-5 d-flex flex-column align-items-start">
+                    <a href="#" class="mb-5 mx-auto mx-xl-0 order-2 order-xl-1">
+                        <img src="img/logo-white.png" alt="">
+                    </a>
+                    <div class="order-3 order-xl-2">
+                        <p class="title_tiny text-white fw-500">Мы с нетерпением ждем Вашего <br> звонка чтобы сказать:</p>
+                        <h5 class="title title_medium text-yellow mb-4 text-left">«ПРИХОДИТЕ ЗА ДЕНЬГАМИ!»</h5>
+                        <a href="tel:+74950219029" class="link-tel text-white fw-500">+7 (495) 021-90-29</a>
+                    </div>
+                    <img src="img/footer/person.png" alt="girl" class="footer__mobile-img d-block d-xl-none">
+                    <button class="btn btn_yellow mt-5 mb-5 mb-xl-0 order-1 order-xl-3 align-self-center align-self-xl-start" data-bs-toggle="modal" data-bs-target="#exampleModal">Оформить займ</button>
+                </div>
+                <div class="col-12 col-xl-5">
+                    <img src="img/footer/person.png" alt="girl" class="footer__img d-none d-xl-block">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="range/jquery/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>
